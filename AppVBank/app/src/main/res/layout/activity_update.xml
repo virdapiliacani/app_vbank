@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ltrempat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:text="Tanggal  : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTanggal"
+                    android:hint="input d-m-y"
+                    android:background="@color/white"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtNominal"
+                android:text="Nominal  : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editNominal"
+                    android:hint="input nominal uang"
+                    android:background="@color/white"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+<!--        <TableRow>-->
+<!--            <TextView-->
+<!--                android:id="@+id/txtJumlah"-->
+<!--                android:text="Jumlah  : "-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/editJumlah"-->
+<!--                    android:hint="jumlah uang"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:textColor="@color/green"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_width="250dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        </TableRow>-->
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="SIMPAN"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@drawable/kustom_button"/>
+
+
+
+</RelativeLayout>
